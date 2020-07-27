@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="calculator" name="myForm">
+      <div class="math-cal">
+          <input id="display" type="text" name="textBox" class="text-box shadow" placeholder="0">
+      </div>
+      <div class="all-button">
+          <input type="button" value="1" class="shadow-button" onclick="insert(1)">
+          <input type="button" value="2" class="shadow-button" onclick="insert(2)">
+          <input type="button" value="3" class="shadow-button" onclick="insert(3)">
+          <input type="button" value="+" class="shadow-button" onclick="insert('+')">
+      </div>
+      <div class="all-button">
+          <input type="button" value="4" class="shadow-button" onclick="insert(4)">
+          <input type="button" value="5" class="shadow-button" onclick="insert(5)">
+          <input type="button" value="6" class="shadow-button" onclick="insert(6)">
+          <input type="button" value="-" class="shadow-button" onclick="insert('-')">
+      </div>
+     <div class="all-button">
+          <input type="button" value="7" class="shadow-button" onclick="insert(7)">
+          <input type="button" value="8" class="shadow-button" onclick="insert(8)">
+          <input type="button" value="9" class="shadow-button" onclick="insert(9)">
+          <input type="button" value="*" class="shadow-button" onclick="insert('*')">
+    </div>
+    <div class="all-button">
+          <input type="button" value="c" class="shadow-button clear-button" onclick="clean()">
+          <input type="button" value="/" class="shadow-button" onclick="insert('/')">
+          <input type="button" value="0" class="shadow-button" onclick="insert(0)">
+          <button type="button" class="equal-sign" value="=" onclick="equal()">=</button>
+    </div>
+    <div class="all-button">
+        <input type="button" value="(" class="end-button shadow-button" onclick="insert('(')">
+        <input type="button" value=")" class="end-button shadow-button" onclick="insert(')')">
+        <input type="button" value="<" class="end-button shadow-button" onclick="insert('<')"> 
+    </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
